@@ -1,3 +1,106 @@
+body {
+  background-image: url('../img/fondo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav p {
+  text-align: center;
+  font-size: 50px;
+  font-family: Matura MT Script Capitals;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:rosybrown;
+
+  color: #fff;
+}
+
+.logo img {
+  height: 140px;
+  max-width: 100%;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header {
+  background-color: #f7f5f5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+h2 {
+  color:black;
+  font-size: 30px;
+  margin-top: 40px;
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+  font-family: time new roma;
+
+}
+
+
+p {
+  color:black;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer {
+  background-color:rosybrown;
+  color:#68b6d6 (255, 255, 255);
+ 
+  padding: 20px;
+  text-align: center;
+  
+}
+.container {
+max-width: 800px;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+img {
+max-width: 65%;
+margin: 25px;
+}
 .container {
     display: flex;
     justify-content: center;

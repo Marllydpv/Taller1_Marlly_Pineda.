@@ -105,7 +105,7 @@ img {
 form {
     font-family: Arial, sans-serif;
     color: black;
-    background-color: #f2f2f2;
+    background-color: rosybrown;
     border: 1px solid ;
     padding: 20px;
     margin: auto; 
@@ -146,7 +146,7 @@ form {
   
  
   button[type="button"] {
-    background-color: #008CBA;
+    background-color: black;
     color: white;
     padding: 10px 20px;
     border: none;

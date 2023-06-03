@@ -6,3 +6,4 @@ function mostrarTerminos() {
 function ocultarTerminos() {
   document.getElementById("modal").style.display = "none";
 }
+

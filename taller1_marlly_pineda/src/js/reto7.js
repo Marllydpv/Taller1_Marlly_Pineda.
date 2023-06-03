@@ -47,7 +47,7 @@ function validarFormulario() {
     var fechaNacimiento = document.getElementById("fecha_nacimiento").value;
     var fechaNacimientoDate = new Date(fechaNacimiento);
     var anioLimite = new Date("2002-01-01");
-    if (fechaNacimiento === "" || fechaNacimientoDate < anioLimite) {
+    if (fechaNacimiento === "" || fechaNacimientoDate > anioLimite) {
       alert("Debes ser mayor de 18 años para registrarte.");
       return false;
     }
@@ -75,10 +75,10 @@ function validarFormulario() {
       return false;
     }
     if (!/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{10,}/.test(contrasena)) {
-      alert("La contraseña debe tener al menos una letra mayúscula, una letra minúscula, un número, un carácter especial y ser de al menos 10 caracteres.");
-      return false;
+      alert("La contraseña debe tener al menos una letra mayúscula, una letra minúscula, un número, un carácter especial")
+  
     }
 }
-  
+
     
   

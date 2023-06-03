@@ -1,11 +1,12 @@
 
+
 form {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     padding: 20px;
-    margin: 20px;
+    margin: auto; 
     width: 400px;
     max-width: 100%;
   }

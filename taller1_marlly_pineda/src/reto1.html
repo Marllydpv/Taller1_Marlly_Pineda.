@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 1</title>
+</head>
+<link href="css/reto1.css" rel="stylesheet">
+<body>
+    <script type="text/javascript"src="js/reto1.js"> </script>
+    <nav>
+  
+        <p>Marlly Pineda</p>
+        <ul class="menu">
+          <li><a href="index.html">principal</a></li>
+           
+        </ul>
+      </nav>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <form>
+        <label for="palabra">Palabra:</label>
+        <input type="text" id="palabra" name="palabra">
+        <label for="opcion">Opción:</label>
+        <select id="opcion" name="opcion">
+          <option value="longitud">Longitud de la palabra</option>
+          <option value="mayusculas">Convertir a mayúsculas</option>
+          <option value="minusculas">Convertir a minúsculas</option>
+          <option value="primer_caracter">Primer carácter</option>
+        </select>
+        <button type="button" onclick="realizarOperacion()">Realizar operación</button>
+      </form>
+      
+      <p id="resultado"></p>
+      
+</body>
+</html>

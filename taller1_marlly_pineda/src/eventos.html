@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos JavaScript</title>
+</head>
+<link href="css/estilos.css" rel="stylesheet">
+<body>
+
+  <nav>
+  
+    <p>Marlly Pineda</p>
+    <ul class="menu">
+      <li><a href="index.html">principal</a></li>
+       
+    </ul>
+  </nav>
+  <p>
+    
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Evento</th>
+        <th>Ejemplo Aplicación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>click</td>
+        <td><button onclick="alert('¡Haz hecho clic!')">Haz clic aquí</button></td>
+      </tr>
+      <tr>
+        <td>keydown</td>
+        <td><input type="text" onkeydown="alert('Se presionó una tecla')" /></td>
+      </tr>
+      <tr>
+        <td>mouseover</td>
+        <td><div onmouseover="this.style.backgroundColor = 'blue'">Pasa el mouse sobre mí</div></td>
+      </tr>
+      <tr>
+        <td>change</td>
+       <td> <label for="mySelect">Selecciona una opción:</label>
+  
+      
+      <select id="mySelect" onchange="myFunction(event)">
+          
+          
+      <option value="opcion1">gato negro</option>
+          
+         
+      <option value="opcion2">gato blanco</option>
+          
+          
+      <option value="opcion3">gato cafe</option>
+      </td>
+        <tr>
+       <td> submit</td>
+       <td><form onsubmit="myFunction(event)">
+    
+        
+    <label for="name">Nombre:</label>
+        
+        
+    <input type="text" id="name" required>
+        <br>
+        
+       
+    <input type="submit" value="Enviar">
+      
+     
+    </form>
+   
+      </td>
+      </tr>
+      <tr>
+        <td> load</td>
+      <td>
+        <img src="img/gat2.png" onload="myFunction()">
+
+        <script>
+          
+      
+          function myFunction() {
+           alert("La imagen se ha cargado correctamente.");
+          }
+        </script>
+
+      </td>
+      </tr>
+      <tr>
+      <td>focus</td>
+<td>
+  <input type="text" onfocus="myFunction()" placeholder="Haz clic aquí">
+
+  <script>
+    function myFunction() {
+      alert("El campo tiene el foco.");
+    }
+  </script>
+</td>
+</tr>
+
+<tr>
+<td>mouseenter</td>
+  <td><div onmouseenter="alert('El mouse a pasado por aqui')">Pasa el mouse aquí</div></td>
+</tr>  
+  <tr>
+  <td>contextMenu</td>
+  <td>
+    <p oncontextmenu="showContextMenu(event)">Haz clic derecho aquí</p>
+
+    <ul id="contextMenu" style="display: none;">
+      <li>Acción 1</li>
+      <li>Acción 2</li>
+      <li>Acción 3</li>
+    </ul>
+  
+    <script>
+      function showContextMenu(event) {
+        event.preventDefault();
+        var contextMenu = document.getElementById("contextMenu");
+        contextMenu.style.display = "block";
+        contextMenu.style.left = event.clientX + "px";
+        contextMenu.style.top = event.clientY + "px";
+      }
+  
+      document.addEventListener("click", function() {
+        var contextMenu = document.getElementById("contextMenu");
+        contextMenu.style.display = "none";
+      });
+    </script>
+  </td>
+</tr>
+<tr>
+<td>dblclic</td>
+<td>
+<button id="myButton" ondblclick="handleDoubleClick()">Haz doble clic aquí</button>
+
+  <script>
+   
+
+    function handleDoubleClick() {
+      alert("¡Doble clic detectado!");
+    }
+  </script>
+
+</td>
+</tr>
+        
+      
+      
+      
+    
+    </select>
+    </tbody>
+  </table>
+</body>
+</html>

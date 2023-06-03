@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 5</title>
+</head>
+<link href="css/reto5.css" rel="stylesheet">
+<body>
+    <script type="text/javascript"src="js/reto5.js"> </script>
+    <nav>
+  
+        <p>Marlly Pineda</p>
+        <ul class="menu">
+          <li><a href="index.html">principal</a></li>
+           
+        </ul>
+      </nav>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    
+
+
+  <div class="container">
+    <div class="card">
+      <h2>Círculo</h2>
+      <button onclick="abrirModal('circulo')">Perímetro</button>
+      <button onclick="abrirModal('circulo')">Área</button>
+    </div>
+    <div class="card">
+      <h2>Triángulo</h2>
+      <button onclick="abrirModal('triangulo')">Perímetro</button>
+      <button onclick="abrirModal('triangulo')">Área</button>
+    </div>
+    <div class="card">
+      <h2>Rectángulo</h2>
+      <button onclick="abrirModal('rectangulo')">Perímetro</button>
+      <button onclick="abrirModal('rectangulo')">Área</button>
+    </div>
+    <div class="card">
+      <h2>Cuadrado</h2>
+      <button onclick="abrirModal('cuadrado')">Perímetro</button>
+      <button onclick="abrirModal('cuadrado')">Área</button>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <form id="modal-form">
+        <div id="modal-inputs"></div>
+        <button type="button" onclick="calcular()">Calcular</button>
+      </form>
+      <div id="modal-result" class="modal-result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
